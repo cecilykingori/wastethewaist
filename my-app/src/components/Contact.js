@@ -17,8 +17,7 @@ const Contact = () => {
             <div className="contact-item">
               <div className="contact-icon">📧</div>
               <h3>Email</h3>
-              <p>info@wastethewaist.com</p>
-              <p>support@wastethewaist.com</p>
+              <p>hello@wastethewaist.doctor</p>
             </div>
             <div className="contact-item">
               <div className="contact-icon">📅</div>

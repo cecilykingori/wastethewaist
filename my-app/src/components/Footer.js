@@ -37,7 +37,7 @@ const Footer = () => {
           <div className="footer-section">
             <h4>Contact Info</h4>
             <p>📞 +254 700 000 000</p>
-            <p>📧 info@wastethewaist.com</p>
+            <p>📧 hello@wastethewaist.doctor</p>
             <p>🌐 www.wastethewaist.com</p>
           </div>
         </div>

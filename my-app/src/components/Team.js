@@ -4,12 +4,6 @@ import './Team.css';
 const Team = () => {
   const teamMembers = [
     {
-      name: "Micah Kibera",
-      role: "Clinical Nutritionist",
-      description: "Provides personalized nutrition counseling, meal planning, and long-term lifestyle support to ensure sustainable results.",
-      icon: "🥗"
-    },
-    {
       name: "Dr. Lance Mayabi",
       role: "Bariatric & General Surgeon",
       description: "Specializes in surgical interventions for weight loss, including gastric sleeve procedures. Ensures safe, high-quality surgical care.",
@@ -20,6 +14,12 @@ const Team = () => {
       role: "Cardiac Anesthesiologist",
       description: "Expert in perioperative care, ensuring patient safety and comfort during procedures that require anesthesia.",
       icon: "💓"
+    },
+    {
+      name: "Micah Kibera",
+      role: "Clinical Nutritionist",
+      description: "Provides personalized nutrition counseling, meal planning, and long-term lifestyle support to ensure sustainable results.",
+      icon: "🥗"
     }
   ];
 
