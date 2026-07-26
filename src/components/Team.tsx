@@ -1,6 +1,7 @@
 'use client'
 
 import React from 'react'
+import Image from 'next/image'
 import { Card, CardContent } from '@/components/ui/card'
 import { User, Stethoscope, Heart, Utensils, Users } from 'lucide-react'
 import type { TeamMember } from '@/types'
@@ -11,11 +12,13 @@ const Team: React.FC = () => {
       name: 'Micah Kibera',
       title: 'Clinical Nutritionist',
       description: 'Provides personalized nutrition counseling, meal planning, and long-term lifestyle support to ensure sustainable results.',
+      image: '/images/micah-kibera.jpeg',
     },
     {
       name: 'Dr. Lance Mayabi',
       title: 'Bariatric & General Surgeon',
       description: 'Specializes in surgical interventions for weight loss, including gastric sleeve procedures. Ensures safe, high-quality surgical care.',
+      image: '/images/dr-lance-mayabi.png',
     },
     {
       name: 'Dr. Amal Satir',
@@ -51,11 +54,21 @@ const Team: React.FC = () => {
               <Card key={index} className="text-center hover:shadow-lg transition-shadow duration-300">
                 <CardContent className="p-8">
                   <div className="space-y-6">
-                    {/* Profile Image Placeholder */}
-                    <div className="relative mx-auto">
-                      <div className="w-32 h-32 bg-gradient-to-br from-primary-100 to-primary-200 rounded-full mx-auto flex items-center justify-center mb-4">
-                        <IconComponent className="h-16 w-16 text-primary-600" />
-                      </div>
+                    {/* Profile Image */}
+                    <div className="relative mx-auto w-32 h-32">
+                      {member.image ? (
+                        <Image
+                          src={member.image}
+                          alt={member.name}
+                          width={128}
+                          height={128}
+                          className="w-32 h-32 rounded-full mx-auto object-cover mb-4"
+                        />
+                      ) : (
+                        <div className="w-32 h-32 bg-gradient-to-br from-primary-100 to-primary-200 rounded-full mx-auto flex items-center justify-center mb-4">
+                          <IconComponent className="h-16 w-16 text-primary-600" />
+                        </div>
+                      )}
                       <div className="absolute -bottom-2 -right-2 w-8 h-8 bg-primary-600 rounded-full flex items-center justify-center">
                         <User className="h-4 w-4 text-white" />
                       </div>
@@ -84,7 +97,7 @@ const Team: React.FC = () => {
                           <span className="px-3 py-1 bg-green-100 text-green-700 rounded-full text-xs font-medium">
                             Nutrition Planning
                           </span>
-                          <span className="px-3 py-1 bg-blue-100 text-blue-700 rounded-full text-xs font-medium">
+                          <span className="px-3 py-1 bg-emerald-100 text-emerald-700 rounded-full text-xs font-medium">
                             Lifestyle Support
                           </span>
                         </>

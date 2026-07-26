@@ -11,7 +11,6 @@ const Footer: React.FC = () => {
     { label: 'About Us', href: '#about' },
     { label: 'Our Team', href: '#team' },
     { label: 'Services', href: '#services' },
-    { label: 'Testimonials', href: '#testimonials' },
     { label: 'Contact', href: '#contact' },
   ]
 
@@ -31,7 +30,7 @@ const Footer: React.FC = () => {
   ]
 
   return (
-    <footer className="bg-gray-900 text-white">
+    <footer className="bg-slate-900 text-white">
       <div className="container">
         {/* Main Footer Content */}
         <div className="py-12 lg:py-16">
@@ -41,7 +40,7 @@ const Footer: React.FC = () => {
               <div>
                 <h3 className="text-2xl font-bold text-white mb-4 flex items-center">
                   <Heart className="mr-2 h-6 w-6 text-primary-400" />
-                  Waste the Waist
+                  The Weight Is Over
                 </h3>
                 <p className="text-gray-300 leading-relaxed mb-4">
                   A center dedicated to transforming lives through safe, effective, and 
@@ -83,7 +82,7 @@ const Footer: React.FC = () => {
                         key={index}
                         href={social.href}
                         aria-label={social.label}
-                        className="w-10 h-10 bg-gray-800 rounded-lg flex items-center justify-center hover:bg-primary-600 transition-colors duration-200"
+                        className="w-10 h-10 bg-slate-800 rounded-xl flex items-center justify-center hover:bg-primary-600 hover:-translate-y-0.5 transition-all duration-200"
                       >
                         <IconComponent className="h-5 w-5" />
                       </a>
@@ -130,15 +129,15 @@ const Footer: React.FC = () => {
         </div>
 
         {/* Emergency Contact Banner */}
-        <div className="border-t border-gray-800 py-6">
-          <div className="bg-primary-600 rounded-lg p-4 text-center">
+        <div className="border-t border-slate-800 py-6">
+          <div className="bg-primary-600 rounded-2xl p-4 text-center">
             <h4 className="font-semibold text-white mb-2">Need Immediate Assistance?</h4>
             <p className="text-primary-100 text-sm mb-3">
               Our medical team is available for emergency consultations
             </p>
             <a
               href="tel:+254700000000"
-              className="inline-flex items-center bg-white text-primary-600 px-4 py-2 rounded-md font-semibold hover:bg-gray-100 transition-colors"
+              className="inline-flex items-center bg-white text-primary-600 px-4 py-2 rounded-xl font-semibold shadow-sm hover:shadow-lg hover:-translate-y-0.5 transition-all duration-200"
             >
               <Phone className="mr-2 h-4 w-4" />
               Call Now: +254 700 000 000
@@ -147,10 +146,10 @@ const Footer: React.FC = () => {
         </div>
 
         {/* Bottom Footer */}
-        <div className="border-t border-gray-800 py-6">
+        <div className="border-t border-slate-800 py-6">
           <div className="flex flex-col md:flex-row justify-between items-center space-y-4 md:space-y-0">
             <div className="text-gray-400 text-sm">
-              © {currentYear} Waste the Waist. All rights reserved.
+              © {currentYear} The Weight Is Over. All rights reserved.
             </div>
             <div className="flex space-x-6 text-sm">
               <a href="#" className="text-gray-400 hover:text-primary-400 transition-colors">

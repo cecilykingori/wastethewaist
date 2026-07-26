@@ -9,17 +9,21 @@ module.exports = {
   theme: {
     extend: {
       colors: {
+        // Brand palette — emerald "premium wellness" theme.
+        // Anchored on primary-600 (#046C4E), accent primary-500 (#10B981),
+        // and tint primary-50 (#ECFDF5). Every component uses primary-* classes,
+        // so this scale is the single source of truth for the brand color.
         primary: {
-          50: '#f0f9ff',
-          100: '#e0f2fe',
-          200: '#bae6fd',
-          300: '#7dd3fc',
-          400: '#38bdf8',
-          500: '#0ea5e9',
-          600: '#0284c7',
-          700: '#0369a1',
-          800: '#075985',
-          900: '#0c4a6e',
+          50: '#ECFDF5',
+          100: '#D1FAE5',
+          200: '#A7F3D0',
+          300: '#6EE7B7',
+          400: '#34D399',
+          500: '#10B981',
+          600: '#046C4E',
+          700: '#03543B',
+          800: '#023D2B',
+          900: '#01271B',
         },
         secondary: {
           50: '#f8fafc',
@@ -35,7 +39,20 @@ module.exports = {
         },
       },
       fontFamily: {
-        sans: ['Inter', 'sans-serif'],
+        sans: ['var(--font-inter)', 'Inter', 'system-ui', 'sans-serif'],
+        heading: ['var(--font-fraunces)', 'Fraunces', 'Georgia', 'serif'],
+      },
+      keyframes: {
+        'fade-in-up': {
+          '0%': { opacity: '0', transform: 'translateY(24px)' },
+          '100%': { opacity: '1', transform: 'translateY(0)' },
+        },
+      },
+      animation: {
+        'fade-in-up': 'fade-in-up 0.7s ease-out both',
+      },
+      boxShadow: {
+        soft: '0 10px 40px -12px rgba(4, 108, 78, 0.18)',
       },
     },
   },

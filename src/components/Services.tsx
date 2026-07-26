@@ -76,7 +76,7 @@ const Services: React.FC = () => {
         </div>
 
         <div className="grid lg:grid-cols-3 gap-8 mb-16">
-          {interventions.map((intervention, index) => {
+          {interventions.map((intervention) => {
             const IconComponent = getIcon(intervention.id)
             return (
               <Card 
@@ -105,7 +105,7 @@ const Services: React.FC = () => {
                     <ul className="space-y-2">
                       {intervention.features.map((feature, featureIndex) => (
                         <li key={featureIndex} className="flex items-start space-x-2 text-sm">
-                          <CheckCircle className="h-4 w-4 text-green-500 mt-0.5 flex-shrink-0" />
+                          <CheckCircle className="h-4 w-4 text-emerald-500 mt-0.5 flex-shrink-0" />
                           <span className="text-gray-600">{feature}</span>
                         </li>
                       ))}

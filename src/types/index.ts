@@ -14,13 +14,6 @@ export interface Intervention {
   image?: string;
 }
 
-export interface Testimonial {
-  id: string;
-  content: string;
-  author: string;
-  rating?: number;
-}
-
 export interface ContactInfo {
   phones: string[];
   emails: string[];

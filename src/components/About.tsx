@@ -32,7 +32,7 @@ const About: React.FC = () => {
       <div className="container">
         <div className="max-w-3xl mx-auto text-center mb-16">
           <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-6">
-            About Waste the Waist
+            About The Weight Is Over
           </h2>
           <p className="text-xl text-gray-600 leading-relaxed">
             We believe that weight loss is more than a number on the scale — it&apos;s a journey 
@@ -78,7 +78,7 @@ const About: React.FC = () => {
 
           {/* Visual placeholder */}
           <div className="relative">
-            <div className="relative rounded-2xl overflow-hidden bg-gradient-to-br from-gray-100 to-gray-200 aspect-[4/3]">
+            <div className="relative rounded-3xl overflow-hidden bg-gradient-to-br from-primary-50 to-primary-100 aspect-[4/3] ring-1 ring-primary-600/10 shadow-soft">
               <div className="absolute inset-0 flex items-center justify-center">
                 <div className="text-center space-y-4">
                   <div className="w-24 h-24 bg-primary-100 rounded-full mx-auto flex items-center justify-center">

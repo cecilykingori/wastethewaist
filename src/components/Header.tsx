@@ -15,18 +15,17 @@ const Header: React.FC = () => {
     { label: 'About', href: '#about' },
     { label: 'Team', href: '#team' },
     { label: 'Services', href: '#services' },
-    { label: 'Testimonials', href: '#testimonials' },
     { label: 'Contact', href: '#contact' },
   ]
 
   return (
-    <header className="bg-white shadow-sm sticky top-0 z-50">
+    <header className="bg-white/80 backdrop-blur-md border-b border-gray-100 sticky top-0 z-50">
       <div className="container">
         <div className="flex items-center justify-between h-16">
           {/* Logo */}
           <div className="flex-shrink-0">
-            <h1 className="text-2xl font-bold text-primary-600">
-              Waste the Waist
+            <h1 className="text-2xl font-bold text-primary-600 whitespace-nowrap">
+              The Weight Is Over
             </h1>
           </div>
 
